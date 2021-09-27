@@ -17,15 +17,19 @@ class Persona {
     }
 }
 class Trabajador extends Persona {
-    constructor(puesto, area) {
-        super('andres', 'robert')
+    constructor(puesto, area, nombre, apellido) {
+        super(nombre, apellido)
         this.puesto = puesto
         this.area = area
 
     }
 }
+
+class Auth {
+
+}
 const p = new Persona('andres', 'robert');
-const t = new Trabajador('Desarrollador de software', 'Pagos Digitales Emision');
+const t = new Trabajador('Desarrollador de software', 'Pagos Digitales Emision', 'roberto', 'ramirez');
 
 console.log(p.nombre, p.apellido)
 console.log(t.puesto, t.area, t.nombre, t.apellido)
